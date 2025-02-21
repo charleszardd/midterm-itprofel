@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: #212121;
+        color: white;
+        text-align: center;
+    }
+    h1 {
+        font-family: 'Fascinate Inline', cursive;
+        color: pink;
+        font-weight: 500;
+    }
+    p {
+        
+        font-size: 1.5rem;
+    }
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    
+    <h1 style="text-align: center; margin-bottom: 100px; margin-top: 100px;">
+        Yo!
+    </h1>
+   
+ 
+
+    {% block content %}
+
+    {% endblock %}
+
+    {% include 'footer.html' %}
+</body>
+</html>
